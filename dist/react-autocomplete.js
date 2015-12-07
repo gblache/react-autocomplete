@@ -149,6 +149,7 @@ return /******/ (function(modules) { // webpackBootstrap
 	    if (this.state.isOpen === true && this.state.highlightedIndex !== null) {
 	      var itemNode = this.refs['item-' + this.state.highlightedIndex];
 	      var menuNode = this.refs.menu;
+	      if (!itemNode) return;
 	      scrollIntoView(itemNode, menuNode, { onlyScrollIfNeeded: true });
 	    }
 	  },
