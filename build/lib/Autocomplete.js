@@ -136,6 +136,7 @@ var Autocomplete = React.createClass({
     Enter: function Enter(event) {
       var _this2 = this;
 
+      event.preventDefault();
       if (this.state.isOpen === false) {
         // already selected this, do nothing
         return;
