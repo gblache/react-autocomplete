@@ -303,7 +303,7 @@ var Autocomplete = React.createClass({
     }
     return React.createElement(
       'div',
-      { style: { display: 'inline-block' } },
+      null,
       React.createElement('input', _extends({}, this.props.inputProps, {
         role: 'combobox',
         'aria-autocomplete': 'both',
